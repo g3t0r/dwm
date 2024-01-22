@@ -68,6 +68,8 @@ static const char *slockcmd[]  = { "slock", NULL };
 static const char *volumeupcmd[] = {"/home/jan/.local/scripts/volume_up.sh", NULL};
 static const char *volumedowncmd[] = {"/home/jan/.local/scripts/volume_down.sh", NULL};
 static const char *volumetogglecmd[] = {"/home/jan/.local/scripts/volume_toggle.sh", NULL};
+static const char *showweather[]  = {"/home/jan/.local/scripts/show_weather.sh", NULL};
+static const char *confirmexit[]  = {"/home/jan/.local/scripts/exit.sh", NULL};
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -77,7 +79,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_w,      spawn,          {.v = browsercmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-  { MODKEY|ShiftMask,             XK_l,      spawn,          {.v = slockcmd} },
+        { MODKEY|ShiftMask,             XK_l,      spawn,          {.v = slockcmd} },
+        { MODKEY|ShiftMask,             XK_w,      spawn,          {.v = showweather} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -108,7 +111,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_q,      spawn,           {.v = confirmexit} },
 };
 
 /* button definitions */
