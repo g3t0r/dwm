@@ -75,10 +75,12 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[]  = { "firefox", NULL };
 static const char *slockcmd[]  = { "slock", NULL };
 static const char *volumeupcmd[] = {"/home/jan/.local/scripts/volume_up.sh", NULL};
+static const char *geforcenow[]  = {"/home/jan/.local/bin/geforcenow", NULL};
 static const char *volumedowncmd[] = {"/home/jan/.local/scripts/volume_down.sh", NULL};
 static const char *volumetogglecmd[] = {"/home/jan/.local/scripts/volume_toggle.sh", NULL};
 static const char *showweather[]  = {"/home/jan/.local/scripts/show_weather.sh", NULL};
 static const char *confirmexit[]  = {"/home/jan/.local/scripts/exit.sh", NULL};
+static const char *showschedule[]  = {"zathura", "/home/jan/docs/studia/plan.pdf" , NULL};
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -90,6 +92,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
         { MODKEY|ShiftMask,             XK_l,      spawn,          {.v = slockcmd} },
         { MODKEY|ShiftMask,             XK_w,      spawn,          {.v = showweather} },
+        { MODKEY,             		XK_g,      spawn,          {.v = geforcenow} },
+        { MODKEY|ShiftMask,            	XK_p,      spawn,          {.v = showschedule } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
