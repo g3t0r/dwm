@@ -14,8 +14,10 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
-static const char col_bright[]	    = "#957fef";
-static const char col_dark[]        = "#7161ef";
+//static const char col_bright[]	    = "#957fef";
+static const char col_bright[]	    = "#1d9619";
+//static const char col_dark[]        = "#7161ef";
+static const char col_dark[]        = "#095e06";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -92,10 +94,10 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_w,      spawn,          {.v = browsercmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-        { MODKEY|ShiftMask,             XK_l,      spawn,          {.v = slockcmd} },
-        { MODKEY|ShiftMask,             XK_w,      spawn,          {.v = showweather} },
-        { MODKEY,             		XK_g,      spawn,          {.v = geforcenow} },
-        { MODKEY|ShiftMask,            	XK_p,      spawn,          {.v = showschedule } },
+  { MODKEY|ShiftMask,             XK_l,      spawn,          {.v = slockcmd} },
+  { MODKEY|ShiftMask,             XK_w,      spawn,          {.v = showweather} },
+  { MODKEY,             		XK_g,      spawn,          {.v = geforcenow} },
+  { MODKEY|ShiftMask,            	XK_p,      spawn,          {.v = showschedule } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
