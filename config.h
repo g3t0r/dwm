@@ -18,11 +18,14 @@ static const char col_bright[]	    = "#957fef";
 //static const char col_bright[]	    = "#1d9619";
 static const char col_dark[]        = "#7161ef";
 //static const char col_dark[]        = "#095e06";
-static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_dark,  col_bright  },
-};
+//static const char *colors[][3]      = {
+//	/*               fg         bg         border   */
+//	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+//	[SchemeSel]  = { col_gray4, col_dark,  col_bright  },
+//};
+//
+
+#include "/home/jan/.cache/wal/colors-wal-dwm.h"
 
 /* systray */
 
