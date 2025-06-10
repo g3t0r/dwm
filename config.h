@@ -25,7 +25,7 @@ static const char col_dark[]        = "#7161ef";
 //};
 //
 
-#include "/home/jan/.cache/wal/colors-wal-dwm.h"
+#include "/home/jan/.cache/wal/colors-wal-dwm-urg.h"
 
 /* systray */
 
