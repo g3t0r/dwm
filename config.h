@@ -79,7 +79,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_bright, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *browsercmd[]  = { "zen-browser", NULL };
+static const char *browsercmd[]  = { "brave", NULL };
 static const char *slockcmd[]  = { "slock", NULL };
 static const char *volumeupcmd[] = {"/home/jan/.local/scripts/volume_up.sh", NULL};
 static const char *geforcenow[]  = {"/home/jan/.local/bin/geforcenow", NULL};
@@ -87,7 +87,7 @@ static const char *volumedowncmd[] = {"/home/jan/.local/scripts/volume_down.sh",
 static const char *volumetogglecmd[] = {"/home/jan/.local/scripts/volume_toggle.sh", NULL};
 static const char *showweather[]  = {"/home/jan/.local/scripts/show_weather.sh", NULL};
 static const char *confirmexit[]  = {"/home/jan/.local/scripts/exit.sh", NULL};
-static const char *showschedule[]  = {"zathura", "/home/jan/docs/studia/plan.pdf" , NULL};
+static const char *showschedule[]  = {"mupdf", "/home/jan/docs/studia/plan.pdf" , NULL};
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
