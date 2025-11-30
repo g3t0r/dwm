@@ -115,8 +115,8 @@ static const Key keys[] = {
 {  MODKEY,            XK_period,                focusmon,        {.i   =   +1               }   },
 {  MODKEY|ShiftMask,  XK_comma,                 tagmon,          {.i   =   -1               }   },
 {  MODKEY|ShiftMask,  XK_period,                tagmon,          {.i   =   +1               }   },
-{  MODKEY|ShiftMask,  XK_m,                     spawn, SHCMD("xrandr --output HDMI2 --primary --auto") },                       
-{  MODKEY|ShiftMask,  XK_n,                     spawn, SHCMD("xrandr --output eDPI --primary --auto"), },                       
+{  MODKEY|ShiftMask,  XK_m,                     spawn, SHCMD("xrandr --output eDP1 --off --output DP1 --off --output DP2 --off --output HDMI1 --off --output HDMI2 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output VIRTUAL1 --off") },                       
+{  MODKEY|ShiftMask,  XK_n,                     spawn, SHCMD("xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --off --output DP2 --off --output HDMI1 --off --output HDMI2 --off --output VIRTUAL1 --off"), },                       
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
